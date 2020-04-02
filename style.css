@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font-family: BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+}
+
+.box-header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #dbdbdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 975px;
+  width: 100%;
+}
+
+.header .logo img {
+  width: 100px;
+}
+
+.header .search {
+  border: solid 1px #dbdbdb;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.header .search .icon-search {
+  display: flex;
+  align-items: center;
+  color: #dbdbdb;
+}
+
+.header .search input {
+  padding: 0px 5px;
+  border: none;
+  background-color: #fafafa;
+}
+
+.header .search input:focus {
+  outline: none;
+}
+
+
+.header .menu {
+  display: flex;
+  align-items: center;
+}
+
+.header .menu .item-menu {
+  margin: 0px 10px;
+}
+
+.header .menu .avatar {
+  width: 24px;
+  height: 24px;
+  background-image: url("image/avatar.JPG");
+  background-size: cover;
+  border-radius: 50%;
+}
