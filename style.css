@@ -1,9 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fafafa;
   font-family: BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   font-size: 14px;
+  background-color: #fafafa;
 }
 
 .box-header {
@@ -16,7 +16,7 @@ body {
 
 .header {
   display: flex;
-  padding: 10px;
+  padding: 10px 0px;
   justify-content: space-between;
   align-items: center;
   max-width: 975px;
@@ -53,14 +53,13 @@ body {
   outline: none;
 }
 
-
 .header .menu {
   display: flex;
   align-items: center;
 }
 
 .header .menu .item-menu {
-  margin: 0px 10px;
+  margin: 0px 0px 0px 20px;
 }
 
 .header .menu .avatar {
@@ -69,4 +68,115 @@ body {
   background-image: url("image/avatar.JPG");
   background-size: cover;
   border-radius: 50%;
+}
+
+.around-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 975px;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  margin: 40px 0px;
+}
+
+.main .content {
+  max-width: 614px;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+}
+
+.main .content .title-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.main .content .title-content .user {
+  display: flex;
+  align-items: center;
+}
+
+.main .content .title-content .user .avatar-user {
+  width: 32px;
+  height: 32px;
+  background-image: url("image/user.JPG");
+  background-size: cover;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.main .content .name-user {
+  font-weight: 600;
+}
+
+.main .content .title-content .choice {
+  padding: 15px;
+}
+
+.main .content .image-content img{
+  width: 614px;
+}
+
+.main .content .action {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.main .content .action .item-action {
+  padding: 0 5px;
+}
+
+.main .content .number-like p {
+  padding: 5px 15px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.main .content .caption {
+  padding: 2px 15px;
+}
+
+.main .content .comment {
+  display: flex;
+  padding: 2px 15px;
+}
+
+.main .content .comment p {
+  padding-right: 5px;
+  margin: 0;
+}
+
+.main .content .time {
+  padding: 7px 15px;
+  color: #888;
+  font-size: 10px;
+}
+
+.main .content .add-comment {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-top: 1px solid #dbdbdb;
+}
+
+.main .content .add-comment input {
+  border: none; 
+  font-size: 16px;
+}
+
+.main .content .add-comment input:focus {
+  outline: none;
 }
