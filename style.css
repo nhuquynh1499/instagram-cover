@@ -19,7 +19,7 @@ body {
   padding: 10px 0px;
   justify-content: space-between;
   align-items: center;
-  max-width: 975px;
+  max-width: 935px;
   width: 100%;
 }
 
@@ -59,7 +59,7 @@ body {
 }
 
 .header .menu .item-menu {
-  margin: 0px 0px 0px 20px;
+  margin: 0px 0px 0px 22px;
 }
 
 .header .menu .avatar {
@@ -79,14 +79,13 @@ body {
 .box-main {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  max-width: 975px;
+  max-width: 935px;
   width: 100%;
 }
 
 .main {
   display: flex;
-  margin: 40px 0px;
+  margin: 40px 28px 40px 0px;
 }
 
 .main .content {
@@ -94,6 +93,7 @@ body {
   width: 100%;
   background-color: #ffffff;
   border: 1px solid #dbdbdb;
+  border-radius: 3px;
 }
 
 .main .content .title-content {
@@ -132,26 +132,30 @@ body {
 .main .content .action {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 0px 16px;
 }
 
 .main .content .action .item-action {
-  padding: 0 5px;
+  padding: 8px;
+  width: 24px;
+  height: 24px;
 }
 
-.main .content .number-like p {
-  padding: 5px 15px;
-  margin: 0;
+.main .content .number-like {
+  padding: 0px 16px;
+  margin-bottom: 8px;
   font-weight: 600;
 }
 
 .main .content .caption {
-  padding: 2px 15px;
+  padding: 0px 16px ;
+  margin-bottom: 4px;
 }
 
 .main .content .comment {
   display: flex;
-  padding: 2px 15px;
+  padding-left: 16px;
+  margin-bottom: 4px;
 }
 
 .main .content .comment p {
@@ -160,23 +164,129 @@ body {
 }
 
 .main .content .time {
-  padding: 7px 15px;
+  padding-left: 16px;
   color: #888;
   font-size: 10px;
+  margin-bottom: 4px;
 }
 
 .main .content .add-comment {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  margin-top: 4px;
+  padding: 16px;
   border-top: 1px solid #dbdbdb;
 }
 
 .main .content .add-comment input {
   border: none; 
-  font-size: 16px;
+  color: #262626;
 }
 
 .main .content .add-comment input:focus {
   outline: none;
+}
+
+.main .content .add-comment span {
+  color:#0095f6;
+  font-weight: 600;
+}
+
+.nav-bar {
+  margin: 40px 0px;
+  max-width: 293px;
+  width: 100%;
+}
+
+.nav-bar .user {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 5px;
+  margin-bottom: 12px;
+}
+
+.nav-bar .user .avatar-user {
+  width: 50px;
+  height: 50px;
+  background-image: url("image/avatar.JPG");
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.nav-bar .user .name-user {
+  margin-left: 14px;
+}
+
+.nav-bar .user .name-user .name-web {
+  margin-bottom: 2px;
+}
+
+.nav-bar .user .name-user .name-real {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.nav-bar .story {
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  margin-top: 4px;
+  border-radius: 4px;
+}
+
+.nav-bar .story .header-story {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 16px;
+  margin-top: 12px;
+}
+
+.nav-bar .story .header-story .title {
+  color: #8e8e8e;
+  font-weight: 600;
+}
+
+.nav-bar .story .header-story a {
+  color: #262626;
+  text-decoration: none;
+}
+
+.nav-bar .story .header-story .more {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.nav-bar .story .box-story {
+  margin-top: 8px;
+  margin-left: 16px;
+  height: 182px;
+  overflow: hidden auto;
+}
+
+.nav-bar .story .box-story .item-story {
+  display: flex;
+  padding: 1px 16px 1px 5px;
+  height: 52px;
+}
+
+.nav-bar .story .box-story .item-story .avatar-user{
+  width: 34px;
+  height: 34px;
+  background-image: url("image/user.JPG");
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.nav-bar .story .box-story .item-story .infor {
+  margin-left: 14px;
+}
+
+.nav-bar .story .box-story .item-story .infor .name-user {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.nav-bar .story .box-story .item-story .infor .time {
+  color: #8e8e8e;
+  font-size: 10px;
 }
