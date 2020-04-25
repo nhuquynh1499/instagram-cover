@@ -1,17 +1,21 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
   font-size: 14px;
   background-color: #fafafa;
 }
 
 .box-header {
   background-color: #ffffff;
-  border-bottom: 2px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;  
 }
 
 .header {
@@ -21,6 +25,11 @@ body {
   align-items: center;
   max-width: 935px;
   width: 100%;
+}
+ 
+.header .logo {
+  display: flex;
+  align-items: center;
 }
 
 .header .logo img {
@@ -77,23 +86,26 @@ body {
 }
 
 .box-main {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto;
   max-width: 935px;
   width: 100%;
+  padding-top: 30px;
 }
 
 .main {
   display: flex;
-  margin: 40px 28px 40px 0px;
+  flex-direction: column;
+  margin-right: 28px; 
+  box-sizing: border-box;
 }
 
 .main .content {
-  max-width: 614px;
   width: 100%;
   background-color: #ffffff;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
+  margin-bottom: 60px;
 }
 
 .main .content .title-content {
@@ -111,10 +123,17 @@ body {
 .main .content .title-content .user .avatar-user {
   width: 32px;
   height: 32px;
-  background-image: url("image/user.JPG");
   background-size: cover;
   border-radius: 50%;
   margin: 15px;
+}
+
+.avatar-converse {
+  background-image: url("image/avatar-converse.jpg");
+}
+
+.avatar-girl {
+  background-image: url("image/avatar-girl.jpg");
 }
 
 .main .content .name-user {
@@ -125,14 +144,14 @@ body {
   padding: 15px;
 }
 
-.main .content .image-content img{
-  width: 614px;
+.main .content .image-content img {
+  width: 100%;
 }
 
 .main .content .action {
   display: flex;
   justify-content: space-between;
-  padding: 0px 16px;
+  padding: 0px 8px;
 }
 
 .main .content .action .item-action {
@@ -148,8 +167,13 @@ body {
 }
 
 .main .content .caption {
-  padding: 0px 16px ;
+  padding: 0px 16px;
   margin-bottom: 4px;
+  display: flex;
+}
+
+.main .content .caption .content-caption {
+  padding-left: 5px;
 }
 
 .main .content .comment {
@@ -179,7 +203,7 @@ body {
 }
 
 .main .content .add-comment input {
-  border: none; 
+  border: none;
   color: #262626;
 }
 
@@ -188,13 +212,14 @@ body {
 }
 
 .main .content .add-comment span {
-  color:#0095f6;
+  color: #0094f69f;
   font-weight: 600;
 }
 
 .nav-bar {
-  margin: 40px 0px;
-  max-width: 293px;
+  position: sticky;
+  top: 80px;
+  height: 50vh;
   width: 100%;
 }
 
@@ -232,26 +257,27 @@ body {
   border: 1px solid #dbdbdb;
   margin-top: 4px;
   border-radius: 4px;
+  width: 100%;
 }
 
-.nav-bar .story .header-story {
+.nav-bar .header-story {
   display: flex;
   justify-content: space-between;
   padding: 4px 16px;
   margin-top: 12px;
 }
 
-.nav-bar .story .header-story .title {
+.nav-bar .header-story .title {
   color: #8e8e8e;
   font-weight: 600;
 }
 
-.nav-bar .story .header-story a {
+.nav-bar .header-story a {
   color: #262626;
   text-decoration: none;
 }
 
-.nav-bar .story .header-story .more {
+.nav-bar .header-story .more {
   font-weight: 600;
   font-size: 12px;
 }
@@ -263,30 +289,83 @@ body {
   overflow: hidden auto;
 }
 
-.nav-bar .story .box-story .item-story {
+.nav-bar .box-story .item-story {
   display: flex;
+  justify-content: space-between;
   padding: 1px 16px 1px 5px;
   height: 52px;
 }
 
-.nav-bar .story .box-story .item-story .avatar-user{
+.nav-bar .box-story .item-story .item-story-infor {
+  display: flex;
+}
+
+.nav-bar .box-story .item-story .avatar-user {
   width: 34px;
   height: 34px;
-  background-image: url("image/user.JPG");
+
   background-size: cover;
   border-radius: 50%;
 }
 
-.nav-bar .story .box-story .item-story .infor {
+.avatar-user-story-tan {
+  background-image: url("image/avatar-user-story-tan.JPG");
+}
+
+.avatar-user-story-jolly {
+  background-image: url("image/avatar-user-story-jolly.jpg");
+}
+
+.avatar-user-story-yu {
+  background-image: url('image/avatar-user-story-yu.jpg');
+}
+
+.avatar-user-story-bag {
+  background-image: url('image/avatar-user-story-bag.jpg');
+}
+
+.nav-bar .box-story .item-story .infor {
   margin-left: 14px;
 }
 
-.nav-bar .story .box-story .item-story .infor .name-user {
+.nav-bar .box-story .item-story .infor .name-user {
   font-weight: 600;
   margin-bottom: 2px;
 }
 
-.nav-bar .story .box-story .item-story .infor .time {
+.nav-bar .box-story .item-story .infor .time {
   color: #8e8e8e;
   font-size: 10px;
+}
+
+.nav-bar .suggestion {
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  margin-top: 4px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.nav-bar .suggestion .box-story {
+  margin-top: 8px;
+  margin-left: 16px;
+}
+
+.nav-bar .suggestion .follow {
+  border: none;
+  background: 0 0;
+  color: #0095f6;
+  font-size: 12px;
+}
+
+.follow-girl {
+  background-image: url('image/follow-girl.jpg');
+}
+
+.follow-bow {
+  background-image: url('image/follow-bow.jpg');
+}
+
+.follow-python {
+  background-image: url('image/follow-python.jpg');
 }
