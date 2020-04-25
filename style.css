@@ -136,6 +136,10 @@ body {
   background-image: url("image/avatar-girl.jpg");
 }
 
+.avatar-love {
+  background-image: url('image/avatar-love.jpg');
+}
+
 .main .content .name-user {
   font-weight: 600;
 }
@@ -256,6 +260,7 @@ body {
   background-color: #ffffff;
   border: 1px solid #dbdbdb;
   margin-top: 4px;
+  margin-bottom: 12px;
   border-radius: 4px;
   width: 100%;
 }
@@ -309,19 +314,23 @@ body {
 }
 
 .avatar-user-story-tan {
-  background-image: url("image/avatar-user-story-tan.JPG");
+  background-image: url("image/avatar-tan.JPG");
 }
 
 .avatar-user-story-jolly {
-  background-image: url("image/avatar-user-story-jolly.jpg");
+  background-image: url("image/avatar-jolly.jpg");
 }
 
 .avatar-user-story-yu {
-  background-image: url('image/avatar-user-story-yu.jpg');
+  background-image: url('image/avatar-yu.jpg');
 }
 
 .avatar-user-story-bag {
-  background-image: url('image/avatar-user-story-bag.jpg');
+  background-image: url('image/avatar-bag.jpg');
+}
+
+.avatar-user-story-jean {
+  background-image: url('image/avatar-jean.jpg');
 }
 
 .nav-bar .box-story .item-story .infor {
